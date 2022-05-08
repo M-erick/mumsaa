@@ -16,13 +16,43 @@
 
                     <div class="flex flex-wrap">
                         <label for="name" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
-                            {{ __('Name') }}:
+                            {{ __('First Name') }}:
                         </label>
 
-                        <input id="name" type="text" class="form-input w-full @error('name')  border-red-500 @enderror"
-                            name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                        <input id="firstName" type="text" class="form-input w-full @error('firstName')  border-red-500 @enderror"
+                            name="firstName" value="{{ old('firstName') }}" required autocomplete="name" autofocus>
 
-                        @error('name')
+                        @error('firstName')
+                        <p class="text-red-500 text-xs italic mt-4">
+                            {{ $message }}
+                        </p>
+                        @enderror
+                    </div>
+
+                    <div class="flex flex-wrap">
+                        <label for="lastName" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
+                            {{ __('Last Name') }}:
+                        </label>
+
+                        <input id="lastName" type="text" class="form-input w-full @error('Lname')  border-red-500 @enderror"
+                            name="lastName" value="{{ old('lastName') }}" required autocomplete="name" autofocus>
+
+                        @error('lastName')
+                        <p class="text-red-500 text-xs italic mt-4">
+                            {{ $message }}
+                        </p>
+                        @enderror
+                    </div>
+
+                    <div class="flex flex-wrap">
+                        <label for="registrationNumber" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
+                            {{ __('Registration Number') }}:
+                        </label>
+
+                        <input id="regNumber" type="text" class="form-input w-full @error('regNumber')  border-red-500 @enderror"
+                            name="regNumber" value="{{ old('regNumber') }}" required autocomplete="regNumber" autofocus>
+
+                        @error('regNumber')
                         <p class="text-red-500 text-xs italic mt-4">
                             {{ $message }}
                         </p>
@@ -39,6 +69,20 @@
                             value="{{ old('email') }}" required autocomplete="email">
 
                         @error('email')
+                        <p class="text-red-500 text-xs italic mt-4">
+                            {{ $message }}
+                        </p>
+                        @enderror
+                    </div>
+                    <div class="flex flex-wrap">
+                        <label for="yearOfStudy" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
+                            {{ __('Year Of Study') }}:
+                        </label>
+
+                        <input id="yearOfStudy" type="text" class="form-input w-full @error('yearOfStudy')  border-red-500 @enderror"
+                            name="yearOfStudy" value="{{ old('yearOfStudy') }}" required autocomplete="yearOfStudy" autofocus>
+
+                        @error('yearOfStudy')
                         <p class="text-red-500 text-xs italic mt-4">
                             {{ $message }}
                         </p>
