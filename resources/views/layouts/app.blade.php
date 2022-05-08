@@ -15,16 +15,18 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
-    <div id="app">
-        <header class="bg-blue-900 py-6">
-            <div class="container mx-auto flex justify-between items-center px-6">
+<body class="h-screen font-sans antialiased leading-none bg-gray-100">
+    <div id="app" >
+        <div class="fixed top-0 z-50 w-full">
+
+        <header class="h-24 bg-blue-900">
+            <div class="container flex items-center justify-between px-6 mx-auto">
                 <div>
                     <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
                         {{ config('app.name', 'MUMSA') }}
                     </a>
                 </div>
-                <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
+                <nav class="space-x-4 text-sm text-gray-300 sm:text-base">
                     @guest
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
@@ -44,13 +46,14 @@
                 </nav>
             </div>
         </header>
+        </div>
 
         @yield('content')
     </div>
      {{-- the footer should be static --}}
         {{-- removed footer for the time being --}}
 
-
+{{--
         @if (Auth::check())
             <div>
                 @include('layouts.footer')
@@ -58,7 +61,7 @@
 
 
             </div>
-        @endif
+        @endif --}}
 
 </body>
 </html>
