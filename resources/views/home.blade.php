@@ -24,19 +24,32 @@
                             <div class="p-6">
                                 <h1
                                     class="text-xl font-bold text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
-                                    This is Amazing for people to visit.</h1>
+                                   Total Billed</h1>
+                                <p class="my-2 text-gray-700 hover-text-900 ">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Praesentium quis.</p>
+                            </div>
+                            {{-- Apply chart.js to map all the data balance, billed and contributions yearly --}}
+                        </div>
+                        <div
+                            class="container max-w-md mx-auto transition duration-300 rounded-lg shadow-lg hover:shadow-2xl">
+                            {{-- <img src="https://images.unsplash.com/photo-1572431447238-425af66a273b" alt=""
+                                class="w-full rounded-t-lg"> --}}
+                            <div class="p-6">
+                                <h1
+                                    class="text-xl font-bold text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
+                                    Total Paid</h1>
                                 <p class="my-2 text-gray-700 hover-text-900 ">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Praesentium quis.</p>
                             </div>
                         </div>
                         <div
                             class="container max-w-md mx-auto transition duration-300 rounded-lg shadow-lg hover:shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1572431447238-425af66a273b" alt=""
-                                class="w-full rounded-t-lg">
+                            {{-- <img src="https://images.unsplash.com/photo-1540202404-1b927e27fa8b" alt=""
+                                class="w-full rounded-t-lg"> --}}
                             <div class="p-6">
                                 <h1
                                     class="text-xl font-bold text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
-                                    This is Amazing for people to visit.</h1>
+                                    Balance</h1>
                                 <p class="my-2 text-gray-700 hover-text-900 ">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Praesentium quis.</p>
                             </div>
@@ -48,7 +61,7 @@
                             <div class="p-6">
                                 <h1
                                     class="text-xl font-bold text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
-                                    This is Amazing for people to visit.</h1>
+                                    Contribution</h1>
                                 <p class="my-2 text-gray-700 hover-text-900 ">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Praesentium quis.</p>
                             </div>
