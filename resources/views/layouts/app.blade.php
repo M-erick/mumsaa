@@ -15,14 +15,16 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @stack('scripts')
+
 </head>
 
-<body class="h-screen font-sans antialiased leading-none bg-gray-100">
+<body class=" font-sans antialiased leading-none bg-gray-100">
     <div id="app">
         <div class="fixed top-0 z-50 w-full">
 
             <header class="h-24 bg-blue-900">
-                <div class="container flex items-center justify-between px-6 mx-auto">
+                <div class="pt-2 container flex items-center justify-between px-6 mx-auto">
                     <div>
                         <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
                             {{ config('app.name', 'MUMSA') }}
@@ -46,17 +48,27 @@
                         @endguest
                     </nav>
                 </div>
+                @if (Auth::check())
+                <div class="  pt-10 container    mx-auto flex  justify-start text-white  ">
+                    <a class="pl-5 no-underline font-semibold hyper-style pr-2 hover:underline active:text-orange-200" href="{{ route('home') }} ">DASHBOARD</a>
+
+                    <a class="no-underline hyper-style hover:underline active:text-orange-200 " href="{{ route('list') }} ">LIST</a>
+                    {{-- <a class="no-underline  hyper-style" href="{{ route('sell') }} ">SELL</a> --}}
+
+                </div>
+
+            @endif
             </header>
         </div>
 
         @yield('content')
     </div>
-    {{-- the footer should be static --}}
+    {{-- the bottomNavBar should be static --}}
     {{-- removed footer for the time being --}}
 
     {{-- @if (Auth::check())
             <div>
-                @include('layouts.footer')
+                @include('layouts.bottomNavbar')
 
 
 
