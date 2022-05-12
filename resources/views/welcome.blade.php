@@ -56,7 +56,20 @@
 
                         <div
                             class="container max-w-md mx-auto transition duration-300 rounded-lg shadow-lg hover:shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1627751476653-e954179b174a" alt=""
+                            <img src="{{URL('/images/Eid-Mubarak.jpg')}}" alt=""
+                                class="w-full rounded-t-lg">
+                            <div class="p-6">
+                                <h1
+                                    class="text-xl font-bold text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
+                                    This is Amazing for people to visit.</h1>
+                                <p class="my-2 text-gray-700 hover-text-900 ">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Praesentium quis.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="container max-w-md mx-auto transition duration-300 rounded-lg shadow-lg hover:shadow-2xl">
+                            <img src="{{URL('/images/Eid-ul-Adha.jpg')}}" alt=""
                                 class="w-full rounded-t-lg">
                             <div class="p-6">
                                 <h1
@@ -68,19 +81,7 @@
                         </div>
                         <div
                             class="container max-w-md mx-auto transition duration-300 rounded-lg shadow-lg hover:shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1572431447238-425af66a273b" alt=""
-                                class="w-full rounded-t-lg">
-                            <div class="p-6">
-                                <h1
-                                    class="text-xl font-bold text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
-                                    This is Amazing for people to visit.</h1>
-                                <p class="my-2 text-gray-700 hover-text-900 ">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Praesentium quis.</p>
-                            </div>
-                        </div>
-                        <div
-                            class="container max-w-md mx-auto transition duration-300 rounded-lg shadow-lg hover:shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1540202404-1b927e27fa8b" alt=""
+                            <img src="{{URL('/images/muslim-festival.jpg')}}" alt=""
                                 class="w-full rounded-t-lg">
                             <div class="p-6">
                                 <h1
@@ -92,27 +93,27 @@
                         </div>
 
                     </div>
-                    <div class="container transition duration-300 rounded-lg shadow-lg max-w-screen-2xl hover:shadow-2xl">
+                    {{-- <div class="container transition duration-300 rounded-lg shadow-lg max-w-screen-2xl hover:shadow-2xl"> --}}
                         {{-- <img src="images/money.jpg" alt="" class="w-full rounded-t-lg"> --}}
-                        <div class="p-6">
+                        {{-- <div class="p-6">
                             <h1
                                 class="text-xl font-bold text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
                                 News/Admin Panel.</h1>
                             <p class="my-2 text-gray-700 hover-text-900 ">Administration Notification Panel .<br/>
                             Admin panel</p>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div class="container transition duration-300 rounded-lg shadow-lg max-w-screen-2xl hover:shadow-2xl">
+                    {{-- <div class="container transition duration-300 rounded-lg shadow-lg max-w-screen-2xl hover:shadow-2xl"> --}}
                         {{-- <img src="images/money.jpg" alt="" class="w-full rounded-t-lg"> --}}
-                        <div class="p-6">
+                        {{-- <div class="p-6">
                             <h1
                                 class="text-xl font-bold text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
                                 News/Admin Panel.</h1>
                             <p class="my-2 text-gray-700 hover-text-900 ">Activities .<br/></p>
 
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div>
             </section>

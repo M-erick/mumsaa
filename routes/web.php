@@ -20,3 +20,5 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+// Route::view('/','')->name('home');
+Route::view('/userList','table')->name('list');
