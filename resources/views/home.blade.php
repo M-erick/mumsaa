@@ -1,9 +1,6 @@
 @extends('layouts.app')
 @push('scripts')
     <script src="{{ asset('chart.js/chart.js') }}"></script>
-
-
-    {{-- <script src="{{ asset('js/chart_demo.js') }}" defer></script> --}}
 @endpush
 @section('content')
     <main class="h-screen mt-10 sm:container sm:mx-auto  bg-zinc-400 sm:mt-10">
@@ -35,15 +32,10 @@
                             <h1
                                 class="text-xl font-bold text-center text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
                                 Financial Expenditure</h1>
-                            <p class="my-2 text-gray-700 hover-text-900 ">Total Billed <span
-                                    class="font-bold">45000/=</span></p>
-                            {{-- @else --}}
-                            <p class="my-2 text-gray-700 hover-text-900 ">Total Paid<span
-                                    class="font-bold">30000/=</span></p>
-                            <p class="my-2 text-gray-700 hover-text-900 ">Balance<span class="font-bold">15000/=</span>
+                            <p class="my-2 text-gray-700 hover-text-900 font-bold ">Total Billed :{{ $totalBilled}}/=</p>
+                            <p class="my-2 text-gray-700 hover-text-900  font-bold">Total Paid :{{ $totalPaid }}/=</span></p>
+                            <p class="my-2 text-gray-700 hover-text-900  font-bold">Balance :{{ $balance }}/=
                             </p>
-                            <p class="my-2 text-gray-700 hover-text-900 ">Contribution<span
-                                    class="font-bold">10000/=</span></p>
 
                         </div>
 
@@ -59,14 +51,15 @@
                         </div>
                     </div>
 
-                    <div
+                    {{-- Alternate this images --}}
+                    {{-- <div
                         class="py-6 px-2 container mb-5 transition duration-300 rounded-lg shadow-lg max-w-screen-2xl hover:shadow-2xl">
                         <img src="{{ URL('/images/islamQuotes.jpg') }}" alt="" class="w-full rounded-t-lg">
-                    </div>
+                    </div> --}}
 
 
                 </div>
-                <div class="  fixed bottom-0 bg-blue-200 pt-10 container pb-4    mx-auto flex  justify-start text-white  ">
+                {{-- <div class="  fixed bottom-0 bg-blue-200 pt-10 container pb-4    mx-auto flex  justify-start text-white  ">
                     <a class="px-5  no-underline font-semibold hyper-style hover:underline active:text-orange-200"
                         href="{{ route('home') }} ">HOME</a>
 
@@ -75,7 +68,7 @@
                     <a class="no-underline hyper-style hover:underline active:text-orange-200 "
                         href="{{ route('list') }} ">LIST</a>
 
-                </div>
+                </div> --}}
         </div>
 
 
@@ -87,7 +80,7 @@
 
             let myChart = document.getElementById('myChart').getContext('2d');
             let massPopChart = new Chart(myChart, {
-                type: 'line', //horizontalBar bar line ,doughnut
+                type: 'bar', //horizontalBar bar line ,doughnut
                 data: {
                     labels: labels,
                     datasets: [{
