@@ -15,7 +15,7 @@
     let massPopChart = new Chart(myChart, {
         type: 'line', //horizontalBar bar line ,doughnut
         data: {
-            labels: ['January', 'February', 'March', 'Lowell', 'April', 'May','June','July','August','September','October','November','December'],
+            labels: ['January', 'February', 'March', 'April', 'May','June','July','August','September','October','November','December'],
             datasets: [{
                 label: 'Population',
                 data: [
