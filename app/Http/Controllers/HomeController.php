@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ChartData;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $chartData = ChartData::select('Year','amount','month')
+        ->pluck('amount','month');
+
+       $labels = $chartData->keys('month');
+       $data =$chartData->values();
+
+
+        return view('home',compact('labels','data'));
+
     }
 }
