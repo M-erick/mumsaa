@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +22,11 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::middleware('auth')->group(function() {
+    Route::resource('/userList', PaymentController::class)->name('index','list');
+
+});
+Route::resource('/blog',PostController::class);
+
 // Route::view('/','')->name('home');
-Route::view('/userList','table')->name('list');
+// Route::view('/userList','userRegistration')->name('list');
