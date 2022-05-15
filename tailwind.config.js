@@ -4,6 +4,10 @@ module.exports = {
     './resources/css/**/*.css',
   ],
   theme: {
+      colors:{
+          'lighred':'#F24B4B'
+
+      },
     extend: {}
   },
   variants: {},
