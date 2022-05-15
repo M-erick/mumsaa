@@ -34,7 +34,8 @@ class PaymentRequest extends FormRequest
 
             'admission' =>['required'],
             'amount'=>['required','regex:/^\d+(\.\d{1,2})?$/','min:0','not_in:0'],
-            'name'=>['required','alpha']
+            'name'=>['required','alpha'],
+            'payment'=>['required']
 
 
         ];
@@ -48,7 +49,8 @@ class PaymentRequest extends FormRequest
                 'amount.required' =>'Amount required',
                 'amount.min'=>'minimum value is 0',
                 'amount.not_in'=>'Value cannot be 0',
-                'name.required'=>'Name is required'
+                'name.required'=>'Name is required',
+                'payment'=>'Payment required'
             ];
         }
     }

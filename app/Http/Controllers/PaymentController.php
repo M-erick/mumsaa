@@ -20,7 +20,7 @@ class PaymentController extends Controller
         $this->middleware('auth');
     }
     public function index() {
-        $payment = Payment::select('adminName','admission','amount','name','created_at')
+        $payment = Payment::select('adminName','admission','amount','name','payment','created_at')
         // ->where('adminName','=',Auth::user()->firstName)
         ->get();
 
@@ -39,10 +39,12 @@ class PaymentController extends Controller
 
         Payment::create([
 
-            'admission' =>$request->input('admission'),
+            //Capitalize user data
+            'admission' =>strtoupper($request->input('admission')),
             'amount'=>$request->input('amount'),
-            'name'=>$request->input('name'),
-            'adminName'=>auth()->user()->firstName,
+            'name'=>strtoupper($request->input('name')),
+            'payment'=>strtoupper($request->input('payment')),
+            'adminName'=>strtoupper(auth()->user()->firstName),
 
 
             // Display Admin first name for each user he registers  .

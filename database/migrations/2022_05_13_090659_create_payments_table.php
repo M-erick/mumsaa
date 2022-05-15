@@ -19,6 +19,7 @@ class CreatePaymentsTable extends Migration
             $table->string('name');
             $table->string('admission');
             $table->string('amount');
+            $table->string('payment');
             $table->timestamps();
         });
     }
