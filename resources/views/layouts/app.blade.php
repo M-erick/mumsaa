@@ -49,13 +49,30 @@
                     </nav>
                 </div>
                 @if (Auth::check())
-                <div class="  pt-10 container    mx-auto flex  justify-start text-white  ">
+                {{-- <div class="  pt-10 container    mx-auto flex  justify-start text-white  ">
                     <a class="pl-5 no-underline font-semibold hyper-style pr-2 hover:underline active:text-orange-200" href="{{ route('home') }} ">DASHBOARD</a>
 
-                    <a class="no-underline hyper-style hover:underline active:text-orange-200 " href="{{ route('list') }} ">LIST</a>
+                    <a class="no-underline hyper-style hover:underline active:text-orange-200 pr-2 " href="{{ route('list') }} ">LIST</a>
+                    <a class="no-underline hyper-style hover:underline active:text-orange-200 " href="/blog ">BLOG</a> --}}
+
                     {{-- <a class="no-underline  hyper-style" href="{{ route('sell') }} ">SELL</a> --}}
 
+                {{-- </div> --}}
+                <div class="  pt-6 pb-3 container   mx-auto flex  justify-evenly  text-white  ">
+                    <a class="no-underline  hyper-style hover:underline active:text-orange-200" href="{{ route('home') }} ">DASHBOARD</a>
+
+                    <a class="no-underline hyper-style hover:underline active:text-orange-200 " href="{{ route('list') }} ">REGISTER</a>
+                    <a class="no-underline  hyper-style hover:underline active:text-orange-200" href="/blog">BLOG</a>
+
+
+
+
+
+
+
+
                 </div>
+
 
             @endif
             </header>
