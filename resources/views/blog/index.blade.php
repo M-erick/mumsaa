@@ -44,7 +44,7 @@
 
                     </span>
                     {{-- {{ $post->user_id }} --}}
-                    <p class="text-xl font-semibold text-gray-700 pt-8  pb-8 leading-8 font-light">
+                    <p class="text-xl font-semibold text-gray-700 pt-8  pb-8 leading-8 ">
                         {{ $post->description }}
 
                     </p>
