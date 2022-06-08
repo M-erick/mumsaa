@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('firstName');
             $table->string('lastName');
-            $table->date('yearOfStudy');
+            $table->integer('yearOfStudy');
             $table->string('regNumber')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();

@@ -51,6 +51,20 @@
                         </div>
                     </div>
 
+                    <div class="container transition duration-300 rounded-lg shadow-lg max-w-screen-2xl hover:shadow-2xl">
+                        <div class="p-6">
+                            <h1
+                                class="text-xl font-bold text-gray-900 transition duration-200 md:text-1xl hover:text-indigo-600 ">
+                                Today Quotes .</h1>
+                            <p class=" font-semibold  my-2 text-gray-700 hover-text-900 ">
+                                Indeed,those who have believed and done righteous deeds
+                                will have gardens beneath which rivers flow that is a  great
+                                Attainment .
+                            </p>
+
+                        </div>
+                    </div>
+
                     {{-- Alternate this images --}}
                     {{-- <div
                         class="py-6 px-2 container mb-5 transition duration-300 rounded-lg shadow-lg max-w-screen-2xl hover:shadow-2xl">
